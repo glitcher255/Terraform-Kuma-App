@@ -36,7 +36,7 @@ This repository demonstrates how to deploy [**Uptime Kuma**](https://github.com/
 
 ```bash
 git clone https://github.com/glitcher255/Terraform-Kuma-App.git
-cd uptime-kuma-azure
+cd Terraform-Kuma-App
 ```
 > ### 2. Configure your Terraform backend
 > Set up and configure your Terraform backend remote provider organization in ```providers.tf```
