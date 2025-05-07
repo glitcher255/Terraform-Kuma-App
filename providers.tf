@@ -11,7 +11,7 @@ terraform {
 
 #backend
 backend "remote" {
-  organization = "Khaled_Tutorial"
+  organization = "Glitcher255_tf"
 
   workspaces { 
     name = "terraform-kuma-app"
