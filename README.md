@@ -1,4 +1,4 @@
-# Uptime Kuma on Azure App Services (with Terraform)
+# Persistent Uptime Kuma on Azure App Services (with Terraform)
 ![Monitoring Probes](/assets/kuma-sc4.png)
 ## 📘 Overview
 This repository demonstrates how to deploy [**Uptime Kuma**](https://github.com/louislam/uptime-kuma), a self-hosted uptime monitoring tool, on **Azure App Services** using **Terraform**. The project includes persistent storage using **Azure File Shares**, and a live setup that monitors multiple endpoints.
@@ -38,11 +38,26 @@ This repository demonstrates how to deploy [**Uptime Kuma**](https://github.com/
 git clone https://github.com/glitcher255/Terraform-Kuma-App.git
 cd uptime-kuma-azure
 ```
-> ### 2. Configure your Terraform backend (optional but recommended)
+> ### 2. Configure your Terraform backend
 > Store your Terraform Auth token in GitHub Actions environment variables
 ```TF_TOKEN_app_terraform_io```
-> ### 3. Deploy using Terraform
+> ### 3. Configure your storage account
+> Make sure your storage account is globally unique in (Modules/storage_account/sa_main.tf) at "name"
+> ### 4. Deploy using Terraform
 ```bash
 terraform init
 terraform apply -auto-approve
 ```
+## 🧪 Post-Deployment Setup
+After first login:
+
+Set up your admin user.
+
+Add monitoring targets via the dashboard.
+
+They will be saved in /app/data which is mapped to your Azure File Share.
+
+## 📄 License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+Maintainer: Glitcher255
