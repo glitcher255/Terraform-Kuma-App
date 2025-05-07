@@ -1,0 +1,1 @@
+![Monitoring Probes](/assets/kuma-sc4.png)
