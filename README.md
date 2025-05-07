@@ -39,10 +39,11 @@ git clone https://github.com/glitcher255/Terraform-Kuma-App.git
 cd uptime-kuma-azure
 ```
 > ### 2. Configure your Terraform backend
+> Set up and configure your Terraform backend remote provider organization in ```providers.tf```
 > Store your Terraform Auth token in GitHub Actions environment variables
 ```TF_TOKEN_app_terraform_io```
 > ### 3. Configure your storage account
-> Make sure your storage account is globally unique in (Modules/storage_account/sa_main.tf) at "name"
+> Make sure your storage account is globally unique in ```Modules/storage_account/sa_main.tf``` at ```name:"your0unique0storage0account0name"```
 > ### 4. Deploy using Terraform
 ```bash
 terraform init
