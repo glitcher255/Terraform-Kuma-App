@@ -40,6 +40,7 @@ cd uptime-kuma-azure
 ```
 > ### 2. Configure your Terraform backend
 > Set up and configure your Terraform backend remote provider organization in ```providers.tf```
+> 
 > Store your Terraform Auth token in GitHub Actions environment variables
 ```TF_TOKEN_app_terraform_io```
 > ### 3. Configure your storage account
@@ -61,4 +62,4 @@ They will be saved in /app/data which is mapped to your Azure File Share.
 ## 📄 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Maintainer: Glitcher255
+Maintainer: [Glitcher255](https://github.com/glitcher255)
