@@ -37,3 +37,12 @@ This repository demonstrates how to deploy [**Uptime Kuma**](https://github.com/
 ```bash
 git clone https://github.com/glitcher255/Terraform-Kuma-App.git
 cd uptime-kuma-azure
+```
+> ### 2. Configure your Terraform backend (optional but recommended)
+> Store your Terraform Auth token in GitHub Actions environment variables
+```TF_TOKEN_app_terraform_io```
+> ### 3. Deploy using Terraform
+```bash
+terraform init
+terraform apply -auto-approve
+```
